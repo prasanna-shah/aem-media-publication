@@ -1,6 +1,7 @@
 # Media Publication AEM project
 
 This is a Media Publication AEM project built on maven AEM archetype 13.
+This project is deployed and tested on AEM 6.3.
 
 ## Modules
 
@@ -32,6 +33,8 @@ Go to path- http://localhost:4502/assets.html/content/dam/media-publication and 
 This folder (media-publication) is mapped with the custom metadataschema as a part of requirement. 
 
     After uploading each asset, author the required custom properties in 'Media Publication' tab of asset properties.
+	
+	A custom metadataschema is created and mapped to 'media-publication' dam folder for above properties.
 
 ## To view Assets cards page
 
