@@ -1,0 +1,23 @@
+<sly data-sly-use.data="com.adobe.media.publication.core.AssetDetailsPojo">
+	<div class="img-details">
+        <div class="details">
+			<h1>Asset Details</h1>
+			<h2>Title: <span>${data.assetBean.title}</span></h2>
+			<h2>File Name: <span>${data.assetBean.filename}</span></h2>
+			<h2>Description: <br/></h2>
+			<h3>Owner: <span>${data.assetBean.ownername}</span><br/><span class="email">${data.assetBean.owneremail @ context = 'html'}</span></h3>
+			<h3>Url: <span>${data.assetBean.url  @ context = 'html'}</span></h3>
+			<h3>Type: <span>${data.assetBean.type}</span></h3>
+			<div class="buttons">
+				<a href="${data.assetBean.url  @ context = 'unsafe'}" type="button" class="button download" download>Download</a>
+				<a href="/content/mediaPublication/media-asset-cards.html?wcmmode=disabled" class="button ok">Ok</a>
+			</div>
+	    </div>
+		<div class="imag">
+			<img data-sly-test="${data.assetBean.type == 'image'}" src="${data.assetBean.url @ context = 'html'}" alt="${data.assetBean.title}"/>
+			<img data-sly-test="${data.assetBean.type == 'video'}" src="/content/dam/thumbs/video-thumb.png" alt="${data.assetBean.title}"/>
+			<img data-sly-test="${data.assetBean.type == 'pdf'}" src="/content/dam/thumbs/pdf-thumb.jpg" alt="${data.assetBean.title}"/>
+		</div>
+    </div>
+
+</sly>

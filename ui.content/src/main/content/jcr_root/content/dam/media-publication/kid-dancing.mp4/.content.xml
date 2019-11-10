@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:Iptc4xmpCore="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="bad7c603-ea97-4794-8061-8333c609acf7">
+    <jcr:content
+        dam:assetState="unProcessed"
+        dam:relativePath="media-publication/kid-dancing.mp4"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:youtube_category="Film &amp; Animation"
+            dam:youtube_privacy="public"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            assettitle="Kid dancing"
+            assettype="video"
+            asseturl="/content/dam/media-publication/kid-dancing.mp4"
+            owneremail="prasanna96500@gmail.com"
+            ownername="Prasanna">
+            <Iptc4xmpCore:CreatorContactInfo jcr:primaryType="nt:unstructured"/>
+        </metadata>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,18 @@
+<sly data-sly-use.data="com.adobe.media.publication.core.DamQueryPojo">
+
+<h1 class="card-title">Media Publication Assets</h1>
+	<div class="card-page">
+	  <div class="box" data-sly-list.asset=${data.assetList}>
+      	   <a href="/content/mediaPublication/media-asset-details.html?assetpath=${asset.url @ context='html'}&wcmmode=disabled" class="card">
+                <div class="imgBx">
+                    <img data-sly-test="${asset.type == 'image'}" src="${asset.url @ context='html'}" alt="${asset.filename @ context='html'}"/>
+					<img data-sly-test="${asset.type == 'video'}" src="/content/dam/thumbs/video-thumb.png" alt="${asset.filename @ context='html'}"/>
+					<img data-sly-test="${asset.type == 'pdf'}" src="/content/dam/thumbs/pdf-thumb.jpg" alt="${asset.filename @ context='html'}"/>
+                </div>
+                <div class="details">
+                    <h2>${asset.filename @ context='html'}</h2>
+                </div>
+		   </a>
+	  </div>
+	</div>
+</sly>

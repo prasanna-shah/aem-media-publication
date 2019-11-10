@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/mediaPublication">
+        <exclude pattern="/apps/mediaPublication/install" />
+    </filter>
+    <filter root="/conf/global/settings/dam/adminui-extension/metadataschema/mediaschema"/>
+    <filter root="/apps/sling" />
+    <filter root="/etc/designs/mediaPublication"/>
+</workspaceFilter>
