@@ -40,5 +40,9 @@ This will show each of the asset present in 'media-publication' folder in card f
 
     Each card will show the image thumbnail and its file name.
 
-	On click of each card will take you to its detail page showing asset details on left pane and the image in right pane.
+	On click of each card will take you to its detail page showing asset details.
+	
+	Click of 'Download' button will download the asset on your local system.
+	
+	Click of 'Ok' button will take you back to asset-cards page again.
 	
