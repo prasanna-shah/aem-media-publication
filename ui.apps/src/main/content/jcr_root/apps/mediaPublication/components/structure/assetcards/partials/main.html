@@ -1,9 +1,25 @@
-<sly data-sly-use.data="com.adobe.media.publication.core.DamQueryPojo">
+<sly data-sly-use.data="${'com.adobe.media.publication.core.DamQueryPojo' @ assetFolderPath=pageProperties.assetPath}">
 
-<h1 class="card-title">Media Publication Assets</h1>
+    <div class="topnav">
+        <div class="search-container">
+            <input id="search" type="text" placeholder="Search.." name="search">
+            <button id="submit" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="dropdown">
+            <button onclick="filter()" class="dropbtn">Filter</button>
+            <div id="filter-asset" class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Images</a>
+                <a href="#">Videos</a>
+                <a href="#">PDF</a>
+            </div>
+         </div>
+    </div>
+
+	<h1 class="card-title">Media Publication Assets</h1>
 	<div class="card-page">
 	  <div class="box" data-sly-list.asset=${data.assetList}>
-      	   <a href="/content/mediaPublication/media-asset-details.html?assetpath=${asset.url @ context='html'}&wcmmode=disabled" class="card">
+      	   <a data-sly-test="${asset.enable != 'false'}" href="/content/mediaPublication/media-asset-details.html?assetpath=${asset.url @ context='html'}&wcmmode=disabled" class="card asset-${asset.type}">
                 <div class="imgBx">
                     <img data-sly-test="${asset.type == 'image'}" src="${asset.url @ context='html'}" alt="${asset.filename @ context='html'}"/>
 					<img data-sly-test="${asset.type == 'video'}" src="/content/dam/thumbs/video-thumb.png" alt="${asset.filename @ context='html'}"/>
@@ -14,5 +30,10 @@
                 </div>
 		   </a>
 	  </div>
+	</div>
+    <div class="pagination" id="pagination">
+	  <a href="#">&laquo;</a>
+	  <a class="active" href="#">1</a>
+	  <a href="#">&raquo;</a>
 	</div>
 </sly>
