@@ -1451,6 +1451,9 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
                             listOrder="1">
+                            <jcr:content jcr:primaryType="nt:unstructured">
+                                <metadata jcr:primaryType="nt:unstructured"/>
+                            </jcr:content>
                             <items jcr:primaryType="nt:unstructured">
                                 <_x0031_573382876709
                                     jcr:primaryType="nt:unstructured"
@@ -1471,14 +1474,12 @@
                                         metaType="text"/>
                                 </_x0031_573367987016>
                             </items>
-                            <jcr:content jcr:primaryType="nt:unstructured">
-                                <metadata jcr:primaryType="nt:unstructured"/>
-                            </jcr:content>
                         </col2>
                         <col3
                             granite:rel="aem-assets-metadata-form-column"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/coral/foundation/container"
+                            _x0037_4690367223-DefaultValue="1"
                             listOrder="2">
                             <jcr:content jcr:primaryType="nt:unstructured">
                                 <metadata
@@ -1509,6 +1510,25 @@
                                             value="pdf"/>
                                     </items>
                                 </_x0031_573368012754>
+                                <_x0031_574690367223
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Enable Asset"
+                                    name="./jcr:content/metadata/enable">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        metaType="dropdown"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <_x0031_574690407257
+                                            jcr:primaryType="nt:unstructured"
+                                            text="True"
+                                            value="true"/>
+                                        <_x0031_574690416235
+                                            jcr:primaryType="nt:unstructured"
+                                            text="False"
+                                            value="false"/>
+                                    </items>
+                                </_x0031_574690367223>
                             </items>
                         </col3>
                     </items>
