@@ -9,6 +9,7 @@ public class AssetBean {
     private String url;
     private String type;
     private String filename;
+	private String enable;
     
 	//Define getters and setters
 	public String getTitle() {
@@ -46,5 +47,11 @@ public class AssetBean {
 	}
 	public void setFilename(String filename) {
 		this.filename = filename;
+	} 
+	public String getEnable() {
+		return enable;
+	}
+	public void setEnable(String enable) {
+		this.enable = enable;
 	} 
 }

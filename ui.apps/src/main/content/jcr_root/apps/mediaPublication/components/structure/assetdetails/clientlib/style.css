@@ -96,6 +96,10 @@ body{
 .img-details img{
 	max-width: 750px;
     max-height: 600px;
+    display: inherit;
+}
+.img-details iframe{
+	display: inherit;
 }
 
 .img-details .button {
@@ -110,9 +114,17 @@ body{
 	margin: 30px 30px 30px 0;
 	cursor: pointer;
 }
+.img-details .open-inline {
+    margin: 0 0 20px;
+    padding: 8px 12px;
+    background-color: bisque;
+}
 
 .img-details .button:hover {
 	background-color: darkgray;
+}
+.img-details .open-inline:hover {
+	background-color: darksalmon;
 }
 
 @media only screen and (max-width: 767px) {
