@@ -49,3 +49,19 @@ This will show each of the asset present in 'media-publication' folder in card f
 	
 	Click of 'Ok' button will take you back to asset-cards page again.
 	
+## Configuration options for new page-
+
+    Create a new page using 'Asset Card Page' template.
+	
+	Configure the DAM folder path in page properties of the page to show assets of that folder.
+
+## Disable Assets show in page-	
+
+    A dropdown option is added to DAM asset properties dialog to disable the publish of an asset in Assets Card page.
+
+## Client-side features-
+	
+	Search/filter/pagination functionality added in Assets Card page.
+	
+	Inline open video/preview pdf functionality added in Asset Details page.
+	
